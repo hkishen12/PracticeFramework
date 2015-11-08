@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project name="Practice" default="info" basedir=".">
+
+	<!-- Variable Declaration -->
+	<property name="proj.home" value="${basedir}" />
+	<property name="lib.location" value="${basedir}\lib" />
+	<property name="build.location" value="${basedir}\build" />
+	<property name="classes.location" value="${build.location}\compiledclasses" />
+	<property name="src.location" value="${basedir}\src" />
+	<property name="ng.result" value="test-output"/>
+
+	<target name="info">
+		<echo message="Practice - Ant Execution..." />
+	</target>
+
+	<path id="classpath">
+		<fileset dir="${lib.location}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="${basedir}/testng-6.8.5.jar" />
+	</path>
+
+
+	<target name="clean">
+		<echo message="Cleaning build location ->> ${build.location}..." />
+		<delete failonerror="false" dir="${build.location}" />
+		<delete failonerror="false" dir="${proj.home}/reports" />
+		<delete failonerror="false" dir="${proj.home}/XSLT_Reports" />
+		<delete failonerror="false" dir="${proj.home}/test-output" />
+		<mkdir dir="${proj.home}/test-output" />
+		<mkdir dir="${proj.home}/reports" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<echo message="Compiling java classes from source - ${src.location}..." />
+		<echo message="Making required directories..." />
+		<mkdir dir="${build.location}" />
+		<mkdir dir="${classes.location}" />
+		<javac includeantruntime="true" srcdir="${src.location}" destdir="${classes.location}" classpathref="classpath" />
+	</target>
+
+	<taskdef name="testng" classpathref="classpath" classname="org.testng.TestNGAntTask" />
+
+	<target name="run" depends="compile">
+		<testng outputdir="${proj.home}/reports" classpathref="classpath" classpath="${classes.location}">
+			<xmlfileset dir="${proj.home}" includes="testng.xml" />
+		</testng>
+		
+	</target>
+	
+	 <target name="makexsltreports" depends="run">
+		  	
+		        <mkdir dir="${proj.home}/XSLT_Reports/output"/>
+
+		        <xslt in="${proj.home}/reports/testng-results.xml" style="${basedir}/testng-results.xsl"
+		              out="${proj.home}/XSLT_Reports/output/index.html" classpathref="classpath" processor="SaxonLiaison">
+		            <param name="testNgXslt.outputDir" expression="${proj.home}/XSLT_Reports/output/"/>
+		            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+		        </xslt>
+		    </target>
+
+
+</project>

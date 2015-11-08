@@ -1,0 +1,12 @@
+
+<suite name="Logout">
+
+<test name="Logout Test Case">
+    <classes>
+         <class name="LogoutSuite.TestSuiteBase"></class> 
+        <class name="LogoutSuite.TestCase_Logout" depends-on="LogoutSuite.TestSuiteBase" ></class>  
+    </classes>
+</test>
+
+</suite>
+

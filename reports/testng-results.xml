@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Login" duration-ms="24" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+    <groups>
+    </groups>
+    <test name="Login Test Link" duration-ms="11" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+      <class name="LoginSuite.TestCase_Link">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:LoginSuite.TestCase_Link@20c00612]" name="checkTestSkip" is-config="true" duration-ms="3" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="link()[pri:0, instance:LoginSuite.TestCase_Link@20c00612]" name="link" duration-ms="0" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- link -->
+        <test-method status="PASS" signature="DefaultResutl(org.testng.ITestResult)[pri:0, instance:LoginSuite.TestCase_Link@20c00612]" name="DefaultResutl" is-config="true" duration-ms="1" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=link status=SUCCESS method=TestCase_Link.link()[pri:0, instance:LoginSuite.TestCase_Link@20c00612] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefaultResutl -->
+      </class> <!-- LoginSuite.TestCase_Link -->
+    </test> <!-- Login Test Link -->
+    <test name="Test Case Credentials" duration-ms="3" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+      <class name="LoginSuite.TestCase_Credentials">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:LoginSuite.TestCase_Credentials@4f85aa63]" name="checkSuiteSkip" is-config="true" duration-ms="720" started-at="2014-11-05T13:36:21Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+        <test-method status="SKIP" signature="checkTestSkip()[pri:0, instance:LoginSuite.TestCase_Credentials@4f85aa63]" name="checkTestSkip" is-config="true" duration-ms="0" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of 'TestCase_Credentials' set to no. So Skipping all tests inLoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of 'TestCase_Credentials' set to no. So Skipping all tests inLoginSuite
+	at Util.TestUtil.checkTestSkip(Unknown Source)
+	at LoginSuite.TestCase_Credentials.checkTestSkip(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="SKIP" signature="DefaultResutl(org.testng.ITestResult)[pri:0, instance:LoginSuite.TestCase_Credentials@4f85aa63]" name="DefaultResutl" is-config="true" duration-ms="0" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefaultResutl -->
+        <test-method status="SKIP" signature="credentials()[pri:0, instance:LoginSuite.TestCase_Credentials@4f85aa63]" name="credentials" duration-ms="0" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- credentials -->
+      </class> <!-- LoginSuite.TestCase_Credentials -->
+    </test> <!-- Test Case Credentials -->
+  </suite> <!-- Login -->
+  <suite name="Logout" duration-ms="3" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+    <groups>
+    </groups>
+    <test name="Logout Test Case" duration-ms="3" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+      <class name="LogoutSuite.TestCase_Logout">
+        <test-method status="PASS" signature="checkTestSkip()[pri:0, instance:LogoutSuite.TestCase_Logout@e41a882]" name="checkTestSkip" is-config="true" duration-ms="2" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTestSkip -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:LogoutSuite.TestCase_Logout@e41a882]" name="logout" duration-ms="1" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="DefaultResutl(org.testng.ITestResult)[pri:0, instance:LogoutSuite.TestCase_Logout@e41a882]" name="DefaultResutl" is-config="true" duration-ms="0" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=TestCase_Logout.logout()[pri:0, instance:LogoutSuite.TestCase_Logout@e41a882] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefaultResutl -->
+      </class> <!-- LogoutSuite.TestCase_Logout -->
+      <class name="LogoutSuite.TestSuiteBase">
+        <test-method status="PASS" signature="checkSuiteSkip()[pri:0, instance:LogoutSuite.TestSuiteBase@789df61d]" name="checkSuiteSkip" is-config="true" duration-ms="2" started-at="2014-11-05T13:36:22Z" finished-at="2014-11-05T13:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSuiteSkip -->
+      </class> <!-- LogoutSuite.TestSuiteBase -->
+    </test> <!-- Logout Test Case -->
+  </suite> <!-- Logout -->
+  <suite name="Practice" duration-ms="0" started-at="2014-11-05T08:06:22Z" finished-at="2014-11-05T08:06:22Z">
+    <groups>
+    </groups>
+  </suite> <!-- Practice -->
+</testng-results>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name= "Practice">
+<suite-files>
+<suite-file path="./Suite_Login.xml" />
+<suite-file path="./Suite_Logout.xml" />
+</suite-files>
+</suite> 
+

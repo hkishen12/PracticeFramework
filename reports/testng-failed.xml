@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login]">
+  <test name="Test Case Credentials(failed)">
+    <classes>
+      <class name="LoginSuite.TestCase_Credentials">
+        <methods>
+          <include name="credentials"/>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- LoginSuite.TestCase_Credentials -->
+      <class name="LoginSuite.TestCase_Link">
+        <methods>
+          <include name="DefaultResutl"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- LoginSuite.TestCase_Link -->
+    </classes>
+  </test> <!-- Test Case Credentials(failed) -->
+</suite> <!-- Failed suite [Login] -->

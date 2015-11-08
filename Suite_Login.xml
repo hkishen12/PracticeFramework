@@ -1,0 +1,18 @@
+
+<suite name="Login" >
+
+<test name="Login Test Link">
+    <classes>
+      <class name="LoginSuite.TestSuiteBase"></class> 
+         <class name="LoginSuite.TestCase_Link" depends-on="LoginSuite.TestSuiteBase"></class>
+    </classes>
+</test>
+<test name="Test Case Credentials">
+    <classes>
+      <class name="LoginSuite.TestSuiteBase"></class> 
+         <class name="LoginSuite.TestCase_Credentials" depends-on="LoginSuite.TestSuiteBase"></class>
+    </classes>
+</test>
+
+</suite>
+

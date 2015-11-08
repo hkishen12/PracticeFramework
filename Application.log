@@ -1,0 +1,11 @@
+05/11/2014 13:36:21 ExamLogger: Initialized log file successfully!!
+05/11/2014 13:36:21 ExamLogger: Initialized log4j in system properly!!
+05/11/2014 13:36:21 ExamLogger: Loading Property files
+05/11/2014 13:36:21 ExamLogger: Loading Excel files
+05/11/2014 13:36:22 ExamLogger: Loaded Excel Files successfully
+05/11/2014 13:36:22 ExamLogger: Checking Runmode ofLoginSuite
+05/11/2014 13:36:22 ExamLogger: Checking Runmode ofLoginSuite
+05/11/2014 13:36:22 ExamLogger: Checking Runmode ofLoginSuite
+05/11/2014 13:36:22 ExamLogger: Skipped 'TestCase_Credentials' as the runmode was set to NO
+05/11/2014 13:36:22 ExamLogger: Checking Runmode ofLogoutSuite
+05/11/2014 13:36:22 ExamLogger: Checking Runmode ofLogoutSuite
